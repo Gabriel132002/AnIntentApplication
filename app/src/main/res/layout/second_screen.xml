@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".SecondScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100px"
+        android:text="Seja bem-vindo a segunda tela"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_back_to_main_screen"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:background="@drawable/back"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        />
+
+
+</RelativeLayout>
