@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnIrParaSegundaTela;
+    Button btnGoToSecondScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        btnIrParaSegundaTela = findViewById(R.id.btn_go_to_second_screen);
+        btnGoToSecondScreen = findViewById(R.id.btn_go_to_second_screen);
 
-        btnIrParaSegundaTela.setOnClickListener(new View.OnClickListener() {
+        btnGoToSecondScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, SecondScreen.class);
