@@ -24,12 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         btnIrParaSegundaTela = findViewById(R.id.btn_go_to_second_screen);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
         btnIrParaSegundaTela.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
